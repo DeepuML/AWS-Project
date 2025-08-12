@@ -1,0 +1,75 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <rect width="400" height="400" rx="20" fill="url(#classes_gradient)" />
+  
+  <!-- Group fitness class illustration -->
+  <!-- Instructor -->
+  <g transform="translate(200, 150)" fill="#FFFFFF" opacity="0.9">
+    <!-- Head -->
+    <circle cx="0" cy="-50" r="20" />
+    
+    <!-- Body -->
+    <path d="M-25,-30 L25,-30 L15,40 L-15,40 Z" />
+    
+    <!-- Arms raised -->
+    <path d="M-25,-30 L-50,-60 L-40,-70 L-15,-40 Z" />
+    <path d="M25,-30 L50,-60 L40,-70 L15,-40 Z" />
+    
+    <!-- Legs -->
+    <path d="M-15,40 L-25,80 L-5,80 L0,40 Z" />
+    <path d="M15,40 L25,80 L5,80 L0,40 Z" />
+  </g>
+  
+  <!-- Class participants -->
+  <!-- Person 1 -->
+  <g transform="translate(100, 180)" fill="#FFFFFF" opacity="0.7">
+    <circle cx="0" cy="-30" r="15" />
+    <path d="M-15,-15 L15,-15 L10,30 L-10,30 Z" />
+    <path d="M-15,-15 L-30,-35 L-25,-40 L-10,-20 Z" />
+    <path d="M15,-15 L30,-35 L25,-40 L10,-20 Z" />
+    <path d="M-10,30 L-15,60 L-5,60 L0,30 Z" />
+    <path d="M10,30 L15,60 L5,60 L0,30 Z" />
+  </g>
+  
+  <!-- Person 2 -->
+  <g transform="translate(300, 180)" fill="#FFFFFF" opacity="0.7">
+    <circle cx="0" cy="-30" r="15" />
+    <path d="M-15,-15 L15,-15 L10,30 L-10,30 Z" />
+    <path d="M-15,-15 L-30,-35 L-25,-40 L-10,-20 Z" />
+    <path d="M15,-15 L30,-35 L25,-40 L10,-20 Z" />
+    <path d="M-10,30 L-15,60 L-5,60 L0,30 Z" />
+    <path d="M10,30 L15,60 L5,60 L0,30 Z" />
+  </g>
+  
+  <!-- Person 3 -->
+  <g transform="translate(150, 250)" fill="#FFFFFF" opacity="0.6">
+    <circle cx="0" cy="-30" r="15" />
+    <path d="M-15,-15 L15,-15 L10,30 L-10,30 Z" />
+    <path d="M-15,-15 L-30,-35 L-25,-40 L-10,-20 Z" />
+    <path d="M15,-15 L30,-35 L25,-40 L10,-20 Z" />
+    <path d="M-10,30 L-15,60 L-5,60 L0,30 Z" />
+    <path d="M10,30 L15,60 L5,60 L0,30 Z" />
+  </g>
+  
+  <!-- Person 4 -->
+  <g transform="translate(250, 250)" fill="#FFFFFF" opacity="0.6">
+    <circle cx="0" cy="-30" r="15" />
+    <path d="M-15,-15 L15,-15 L10,30 L-10,30 Z" />
+    <path d="M-15,-15 L-30,-35 L-25,-40 L-10,-20 Z" />
+    <path d="M15,-15 L30,-35 L25,-40 L10,-20 Z" />
+    <path d="M-10,30 L-15,60 L-5,60 L0,30 Z" />
+    <path d="M10,30 L15,60 L5,60 L0,30 Z" />
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="50" cy="50" r="20" fill="white" opacity="0.1" />
+  <circle cx="350" cy="350" r="30" fill="white" opacity="0.1" />
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="classes_gradient" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="100%" stop-color="#2980b9" />
+    </linearGradient>
+  </defs>
+</svg>

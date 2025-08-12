@@ -1,0 +1,59 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <rect width="400" height="400" rx="20" fill="url(#facilities_gradient)" />
+  
+  <!-- Gym facility illustration -->
+  <!-- Building outline -->
+  <g fill="#FFFFFF" opacity="0.9">
+    <!-- Main building -->
+    <rect x="50" y="100" width="300" height="200" rx="5" />
+    
+    <!-- Roof -->
+    <path d="M30,100 L200,50 L370,100 Z" />
+    
+    <!-- Door -->
+    <rect x="175" y="220" width="50" height="80" rx="5" fill="url(#facilities_gradient)" />
+    
+    <!-- Windows -->
+    <rect x="80" y="130" width="40" height="40" rx="5" fill="url(#facilities_gradient)" />
+    <rect x="180" y="130" width="40" height="40" rx="5" fill="url(#facilities_gradient)" />
+    <rect x="280" y="130" width="40" height="40" rx="5" fill="url(#facilities_gradient)" />
+    
+    <!-- Sign -->
+    <rect x="150" y="80" width="100" height="30" rx="5" />
+    <text x="200" y="100" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="url(#facilities_gradient)" text-anchor="middle">FLEX FIT</text>
+  </g>
+  
+  <!-- Equipment silhouettes inside -->
+  <g fill="#FFFFFF" opacity="0.3">
+    <!-- Treadmill -->
+    <rect x="70" y="200" width="60" height="30" rx="5" />
+    
+    <!-- Weight rack -->
+    <rect x="270" y="200" width="60" height="30" rx="5" />
+    
+    <!-- Bench -->
+    <rect x="170" y="180" width="60" height="20" rx="5" />
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="50" cy="50" r="20" fill="white" opacity="0.1" />
+  <circle cx="350" cy="350" r="30" fill="white" opacity="0.1" />
+  
+  <!-- Trees -->
+  <g fill="#FFFFFF" opacity="0.6">
+    <circle cx="30" y="250" r="20" />
+    <path d="M20,250 L40,250 L30,200 Z" />
+    
+    <circle cx="370" y="250" r="20" />
+    <path d="M360,250 L380,250 L370,200 Z" />
+  </g>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="facilities_gradient" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1abc9c" />
+      <stop offset="100%" stop-color="#16a085" />
+    </linearGradient>
+  </defs>
+</svg>

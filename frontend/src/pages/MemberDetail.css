@@ -1,0 +1,363 @@
+/* MemberDetail.css - Styling for the gym member detail page */
+
+.member-detail-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.member-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.member-detail-header h1 {
+  font-size: 2.5rem;
+  color: var(--dark-color);
+  margin: 0;
+}
+
+.member-status {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.status-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.status-badge.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.status-badge.inactive {
+  background-color: #f44336;
+  color: white;
+}
+
+.status-badge.pending {
+  background-color: #ff9800;
+  color: white;
+}
+
+.member-id {
+  font-size: 1rem;
+  color: #666;
+}
+
+.member-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #e63939;
+}
+
+.btn-secondary {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-danger {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #d32f2f;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.member-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.detail-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.detail-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark-color);
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--light-color);
+}
+
+.detail-row {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+.detail-value {
+  color: #333;
+}
+
+/* Classes List */
+.classes-list {
+  margin-bottom: 1.5rem;
+}
+
+.class-item {
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-bottom: 1rem;
+}
+
+.class-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+}
+
+.class-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.class-details i {
+  margin-right: 0.3rem;
+  color: var(--primary-color);
+}
+
+/* Training Packages */
+.packages-list {
+  margin-bottom: 1.5rem;
+}
+
+.package-item {
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-bottom: 1rem;
+}
+
+.package-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+}
+
+.package-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.package-details i {
+  margin-right: 0.3rem;
+  color: var(--primary-color);
+}
+
+/* Payment History */
+.payment-list {
+  margin-bottom: 1.5rem;
+}
+
+.payment-item {
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-bottom: 1rem;
+}
+
+.payment-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.payment-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.payment-description {
+  font-weight: 600;
+  color: var(--dark-color);
+  flex: 2;
+}
+
+.payment-amount {
+  font-weight: 600;
+  color: #333;
+}
+
+.payment-status {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.payment-status.paid {
+  background-color: #4caf50;
+  color: white;
+}
+
+.payment-status.pending {
+  background-color: #ff9800;
+  color: white;
+}
+
+.payment-status.failed {
+  background-color: #f44336;
+  color: white;
+}
+
+.no-data {
+  color: #999;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+/* Loading Spinner */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 77, 77, 0.2);
+  border-radius: 50%;
+  border-top-color: var(--primary-color);
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error Container */
+.error-container {
+  text-align: center;
+  padding: 3rem 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-container h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.error-container p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.back-button {
+  margin-top: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .member-detail-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .member-detail-header h1 {
+    font-size: 2rem;
+  }
+  
+  .member-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .member-actions .btn {
+    width: 100%;
+  }
+  
+  .payment-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

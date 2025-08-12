@@ -1,0 +1,25 @@
+# Example Terraform Variables
+# Copy this file to terraform.tfvars and update with your values
+
+project_name = "flex-fit"
+
+# AWS Region
+# region = "us-east-1"
+
+# VPC and Subnet Configuration
+# vpc_cidr = "10.0.0.0/16"
+# public_subnet_cidr = "10.0.1.0/24"
+# private_subnet_cidr_1 = "10.0.2.0/24"
+# private_subnet_cidr_2 = "10.0.3.0/24"
+# availability_zone = "us-east-1a"
+# availability_zone_2 = "us-east-1b"
+
+# EC2 Configuration
+# ami_id = "ami-0261755bbcb8c4a84"  # Ubuntu 20.04 LTS in us-east-1
+# instance_type = "t2.micro"
+key_name = "your-ssh-key-name"  # REQUIRED: Your SSH key pair name in AWS
+
+# Database Configuration
+# db_name = "flexfitdb"
+db_username = "postgres"  # REQUIRED: Database username
+db_password = "your-secure-password"  # REQUIRED: Database password

@@ -1,0 +1,38 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <rect width="400" height="400" rx="20" fill="url(#trainer_gradient)" />
+  
+  <!-- Trainer silhouette -->
+  <g transform="translate(200, 200)" fill="#FFFFFF" opacity="0.9">
+    <!-- Head -->
+    <circle cx="0" cy="-70" r="30" />
+    
+    <!-- Body -->
+    <path d="M-40,-40 L40,-40 L30,60 L-30,60 Z" />
+    
+    <!-- Arms -->
+    <path d="M-40,-40 L-80,20 L-60,30 L-30,-20 Z" />
+    <path d="M40,-40 L80,20 L60,30 L30,-20 Z" />
+    
+    <!-- Legs -->
+    <path d="M-30,60 L-40,120 L-10,120 L-10,60 Z" />
+    <path d="M30,60 L40,120 L10,120 L10,60 Z" />
+    
+    <!-- Dumbbell -->
+    <rect x="-80" y="25" width="160" height="10" rx="5" />
+    <circle cx="-70" cy="30" r="20" />
+    <circle cx="70" cy="30" r="20" />
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="50" cy="50" r="20" fill="white" opacity="0.1" />
+  <circle cx="350" cy="350" r="30" fill="white" opacity="0.1" />
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="trainer_gradient" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e74c3c" />
+      <stop offset="100%" stop-color="#c0392b" />
+    </linearGradient>
+  </defs>
+</svg>

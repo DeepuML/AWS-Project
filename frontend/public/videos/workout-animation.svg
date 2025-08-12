@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a1a" />
+      <stop offset="100%" stop-color="#1a1a3a" />
+    </linearGradient>
+    
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+    </filter>
+    
+    <radialGradient id="spotlight" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.3)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+    </radialGradient>
+    
+    <!-- Silhouette definitions -->
+    <path id="person-lifting" d="M100,200 C120,180 130,190 140,200 L160,220 C170,230 180,220 190,210 L210,190 C220,180 240,190 230,210 L200,240 C190,250 180,260 170,270 L150,290 C140,300 130,310 120,300 L90,270 C80,260 70,250 80,240 Z" />
+    
+    <path id="person-running" d="M100,200 C110,190 120,195 125,205 L135,225 C140,235 150,230 155,220 L165,200 C170,190 180,195 175,210 L160,240 C155,250 150,255 145,260 L135,270 C130,275 125,280 120,275 L105,260 C100,255 95,250 100,245 Z" />
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg-gradient)" />
+  
+  <!-- Dynamic elements -->
+  <g id="animated-elements">
+    <!-- Spotlight effect -->
+    <circle cx="960" cy="540" r="400" fill="url(#spotlight)" opacity="0.7">
+      <animate attributeName="r" values="400;450;400" dur="10s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.7;0.5;0.7" dur="8s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Animated silhouettes -->
+    <g transform="translate(700, 400) scale(1.5)" opacity="0.8">
+      <use xlink:href="#person-lifting" fill="#ffffff">
+        <animateTransform attributeName="transform" type="rotate" from="-5 150 250" to="5 150 250" dur="2s" repeatCount="indefinite" additive="sum" />
+      </use>
+    </g>
+    
+    <g transform="translate(1100, 450) scale(1.5)" opacity="0.8">
+      <use xlink:href="#person-running" fill="#ffffff">
+        <animateTransform attributeName="transform" type="translate" values="0,0; 20,0; 0,0" dur="1.5s" repeatCount="indefinite" additive="sum" />
+      </use>
+    </g>
+    
+    <!-- Animated particles -->
+    <g opacity="0.5">
+      <circle cx="800" cy="300" r="5" fill="#ffffff">
+        <animate attributeName="cy" values="300;350;300" dur="3s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.5;0.2;0.5" dur="3s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="900" cy="400" r="4" fill="#ffffff">
+        <animate attributeName="cy" values="400;450;400" dur="4s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.5;0.3;0.5" dur="4s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="1000" cy="350" r="6" fill="#ffffff">
+        <animate attributeName="cy" values="350;400;350" dur="5s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.5;0.2;0.5" dur="5s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="1100" cy="450" r="3" fill="#ffffff">
+        <animate attributeName="cy" values="450;500;450" dur="3.5s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.5;0.3;0.5" dur="3.5s" repeatCount="indefinite" />
+      </circle>
+    </g>
+    
+    <!-- Equipment outlines -->
+    <g stroke="#ffffff" stroke-width="2" fill="none" opacity="0.3">
+      <!-- Dumbbell -->
+      <rect x="600" y="600" width="100" height="20" rx="10">
+        <animate attributeName="opacity" values="0.3;0.5;0.3" dur="7s" repeatCount="indefinite" />
+      </rect>
+      <circle cx="580" cy="610" r="25" />
+      <circle cx="720" cy="610" r="25" />
+      
+      <!-- Bench outline -->
+      <rect x="1200" y="650" width="200" height="50" rx="10">
+        <animate attributeName="opacity" values="0.3;0.6;0.3" dur="9s" repeatCount="indefinite" />
+      </rect>
+      <rect x="1220" y="700" width="20" height="50" />
+      <rect x="1360" y="700" width="20" height="50" />
+    </g>
+  </g>
+  
+  <!-- Overlay with animated gradient -->
+  <rect width="100%" height="100%" fill="url(#bg-gradient)" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.4;0.3" dur="15s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Text elements that appear and fade -->
+  <g font-family="Arial, sans-serif" fill="#ffffff" text-anchor="middle">
+    <text x="960" y="200" font-size="60" opacity="0" font-weight="bold">
+      TRANSFORM
+      <animate attributeName="opacity" values="0;0.8;0" dur="10s" begin="2s" repeatCount="indefinite" />
+    </text>
+    <text x="960" y="900" font-size="40" opacity="0">
+      FITNESS JOURNEY
+      <animate attributeName="opacity" values="0;0.7;0" dur="10s" begin="7s" repeatCount="indefinite" />
+    </text>
+  </g>
+</svg>

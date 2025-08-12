@@ -1,0 +1,168 @@
+/* Classes.css - Styling for the gym classes page */
+
+.classes-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.classes-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.classes-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--dark-color);
+}
+
+.classes-header p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Filter Tabs */
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.filter-tab {
+  padding: 0.6rem 1.5rem;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: var(--dark-color);
+}
+
+.filter-tab:hover {
+  background-color: #e0e0e0;
+}
+
+.filter-tab.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Classes Grid */
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.class-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.class-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.class-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.class-category {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.class-details {
+  padding: 1.5rem;
+}
+
+.class-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--dark-color);
+}
+
+.class-details p {
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+}
+
+.class-details i {
+  margin-right: 0.5rem;
+  color: var(--primary-color);
+  width: 20px;
+}
+
+.instructor, .schedule, .duration, .level {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.description {
+  margin: 1.2rem 0;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* CTA Section */
+.classes-cta {
+  background-color: var(--light-color);
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.classes-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--dark-color);
+}
+
+.classes-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #666;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .classes-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .classes-header h1 {
+    font-size: 2rem;
+  }
+  
+  .classes-cta h2 {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,27 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <rect width="300" height="300" rx="20" fill="url(#premium_gradient)" />
+  
+  <!-- Crown icon -->
+  <g transform="translate(150, 100)" fill="#FFFFFF" opacity="0.9">
+    <path d="M-50,-20 L-30,20 L0,-10 L30,20 L50,-20 L30,30 L-30,30 Z" />
+    <rect x="-40" y="30" width="80" height="10" rx="5" />
+  </g>
+  
+  <!-- Text -->
+  <text x="150" y="180" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">PREMIUM PLAN</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="50" cy="50" r="20" fill="white" opacity="0.1" />
+  <circle cx="250" cy="250" r="30" fill="white" opacity="0.1" />
+  <path d="M280,40 L260,60 M260,40 L280,60" stroke="white" stroke-width="4" opacity="0.2" />
+  <path d="M40,260 L20,280 M20,260 L40,280" stroke="white" stroke-width="4" opacity="0.2" />
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="premium_gradient" x1="0" y1="0" x2="300" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f39c12" />
+      <stop offset="100%" stop-color="#e67e22" />
+    </linearGradient>
+  </defs>
+</svg>
